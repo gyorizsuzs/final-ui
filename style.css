@@ -1,1 +1,134 @@
-/*# sourceMappingURL=style.css.map */
+:root {
+  --primary: #f8f7f3;
+  --secondary: #1a24fb;
+}
+
+body {
+  width: 100%;
+
+  background-color: var(--primary);
+}
+
+header {
+  padding: 10px;
+
+  height: 40px;
+  width: 100%;
+
+  background-color: var(--secondary);
+
+  font-family: "Montserrat", sans-serif;
+  font-size: 12px;
+  font-weight: 400;
+  color: var(--primary);
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+
+  position: fixed;
+  top: 0;
+  left: 0;
+}
+
+.material-icons.md-24 {
+  font-size: 24px;
+}
+
+#root {
+  padding: 40px;
+  margin: 80px auto;
+
+  max-width: 1280px;
+
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+
+  gap: 100px 20px;
+}
+
+.card {
+  padding: 40px;
+
+  border: 1px solid var(--secondary);
+
+  color: var(--secondary);
+
+  position: relative;
+}
+
+.card .number {
+  height: 40px;
+  width: 40px;
+
+  font-family: "Montserrat", sans-serif;
+  font-size: 24px;
+  font-weight: 700;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+
+.card h1 {
+  margin: 10px 0;
+
+  min-height: 80px;
+  max-width: 280px;
+
+  font-family: "Montserrat", sans-serif;
+  font-size: 36px;
+  font-weight: 700;
+}
+
+.card h2 {
+  font-family: "Montserrat", sans-serif;
+  font-size: 12px;
+  font-weight: 400;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+}
+
+.card .text {
+  max-width: 280px;
+
+  font-family: "Overpass", sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+}
+
+.card button {
+  height: 18px;
+  width: 100%;
+
+  font-family: "Montserrat", sans-serif;
+  font-size: 14px;
+
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+
+  position: absolute;
+  bottom: -30px;
+  left: 0;
+}
+
+.card button:hover {
+  background-color: var(--secondary);
+
+  color: var(--primary);
+}
+
+.material-icons.md-18 {
+  font-size: 18px;
+}
