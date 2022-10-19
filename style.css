@@ -7,10 +7,15 @@ body {
   width: 100%;
 
   background-color: var(--primary);
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+body::-webkit-scrollbar {
+  display: none;
 }
 
 header {
-  padding: 10px;
+  padding: 0 10px;
 
   height: 40px;
   width: 100%;
@@ -35,6 +40,8 @@ header {
 }
 
 .material-icons.md-24 {
+  margin-right: 20px;
+
   font-size: 24px;
 }
 
@@ -109,6 +116,10 @@ header {
 .card button {
   height: 18px;
   width: 100%;
+
+  border: none;
+  background-color: var(--primary);
+  color: var(--secondary);
 
   font-family: "Montserrat", sans-serif;
   font-size: 14px;
